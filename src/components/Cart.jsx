@@ -43,8 +43,10 @@ function Cart({ cart, setCart }) {
       <div className="container mx-auto">
         <div className="px-5 lg:px-14">
           <Link to="/">
-            <div className="flex items-center gap-2 my-10">
-              <ArrowIcon /> <p>Back</p>
+            <div className="flex items-center gap-2 my-12">
+              <div className="border-b-2 border-b-orange-500 flex gap-2 items-center p-1">
+                <ArrowIcon /> <p>Back</p>
+              </div>
             </div>
           </Link>
           {cart.length === 0 ? (
